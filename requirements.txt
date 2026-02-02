@@ -1,0 +1,17 @@
+cython
+ConfigSpace
+ipykernel
+numpy
+matplotlib
+matplotlib-venn
+openai-clip
+opencv-python
+pandas
+pillow
+seaborn
+scikit-learn
+scipy
+smac
+timm
+tqdm
+umap-learn

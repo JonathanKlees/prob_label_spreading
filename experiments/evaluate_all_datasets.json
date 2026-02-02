@@ -1,0 +1,33 @@
+{
+  "comments": {
+    "global_configurations": "datasets, dataset sizes, dimensionality reduction techniques, and sample sizes.",
+    "baseline_algorithm_gaussian_mixture": "gamma determines the impact over distancein the baseline algorithm using Gaussian mixture",
+    "baseline_algorithm_knn": "metric and number of neighbors for the k-nearest neighbors baseline algorithm",
+    "probabilistic_label_spreading": "alpha and number of neighbors (same as baseline) for probabilistic label spreading"
+  },
+  "datasets": ["TwoMoons", "CIFAR10", "CIFAR10-H", "EMNIST", "ANIMALS10", "MTSD", "TinyImageNet"],
+  "dataset_sizes": {
+    "TwoMoons": "all",
+    "EMNIST": "all",
+    "EEMNIST": "all",
+    "CIFAR10": "all",
+    "CIFAR10-H": "all",
+    "ANIMALS10": "all",
+    "TinyImageNet": "all",
+    "MTSD": "all"
+  },
+  "prob_label_columns": ["prob_label_effnetb0"],
+  "algorithms": ["gaussian_baseline", "knn_baseline","pls"],
+  "multiple_runs": 10,
+  "dim_reduction_techniques": ["CLIP_UMAP"],
+  "dimensions": [20],
+  "sample_sizes": [0.001, 0.01, 0.1],
+
+  "gammas": [0.01, 0.1, 1, 10, 100],
+
+  "metrics": ["euclidean"],
+  "k_neighbors_baseline": [5, 10, 20, 50],
+
+  "k_neighbors_pls": [20],
+  "alphas": [0, 0.5, 0.9, 0.99, 0.999]
+}
