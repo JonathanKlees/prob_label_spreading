@@ -107,3 +107,4 @@ This script will also generate the soft labels by executing the notebook prob_la
 
 5. Main Results can be analyzed directly with the jupyter notebook analysis.ipynb. Supplementary studies are conducted in runtime.ipynb, performance_est_with_test_data.ipynb and probabilistic_label_spreading.ipynb, which can also be used for debugging if the method should not work.
 
+6. To replicate results on the data-centric benchmark, use the implementation of our method and copy it into the benchmark repository as specified in the benchmark instructions.
