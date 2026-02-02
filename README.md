@@ -96,7 +96,6 @@ You can now run the project. Make sure your CUDA drivers are correctly installed
 
 1. As a first step, datasets need to be stored locally under data/datasets and named accordingly (CIFAR10, CIFAR10-H, EMNIST, ANIMALS10, TwoMoons, TinyImageNet)
 Then, in the data folder, the script compute_embeddings can be used to apply data pre-processing. Note that this may take up to a day if all target dimensions are to be evaluated. It is sufficient to specify only the single target dimension of 20 here to replicate the main results. 
-
 Please specify the target dimensions for each dataset in the jupyter notebook dimensionality_reduction.ipynb and then run process_data.sh.
 This script will also generate the soft labels by executing the notebook prob_label_generation.ipynb. The Two Moons dataset has its own jupyter notebook for data-processing, which is also executed when calling process_data.sh.
 
